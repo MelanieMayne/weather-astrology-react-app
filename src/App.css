@@ -1,5 +1,23 @@
+:root {
+  --default-text-color: #2a3d66;
+  --background-color: rgba(215, 137, 215, 0.9);
+  --main-color: #9d65c9;
+  --secondary-color: #f7e8f6;
+  --heading-font: font-family: 'Eczar', serif;
+  --default-font: font-family: 'Fira Mono', monospace; 
+}
 .App {
   text-align: center;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
+.App .main-container {
+  border: solid 1px var(--default-text-color);
+  border-radius: 4px;
+  font-family: var(--default-font);
+  background-image: url(./images/galaxy2.jpeg);
+  margin: 10px;
 }
 
 

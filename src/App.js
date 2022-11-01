@@ -1,18 +1,21 @@
 import React from 'react';
-import './App.css';
+import SearchEngine from "./SearchEngine";
+import image from "./images/galaxy2.jpeg";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Weather Astrology App Coming Soon...
-        </p>
-       
-      </header>
+      <div
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundRepeat: "no-repeat"
+        }}
+        class="container main-container"
+      >
+        <SearchEngine city="Long Beach"/>
+      </div>
     </div>
   );
 }
-
-export default App;
